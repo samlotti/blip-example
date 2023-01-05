@@ -16,7 +16,7 @@ Clone this repository
 
 Install blip if you have not already done that: [Blip] (https://github.com/samlotti/blip)
 
-Generate the template Go file but running ./buildTemplates.sh
+Generate the template Go file:
 
 ```shell
     ./buildTemplates.sh
@@ -26,7 +26,7 @@ Generate the template Go file but running ./buildTemplates.sh
     blip -dir="./html" --rebuild --watch
 ```
 
-Note that watch will monitor for file changes and rebuild as needed.
+Note that --watch will monitor for file changes and rebuild as needed.
 
 Generated files will be in the folder
 
@@ -34,7 +34,7 @@ Generated files will be in the folder
   ./blipped
 ```
 
-Start the application using 
+in another window start the application using 
 
 ```shell
     air
@@ -50,4 +50,8 @@ Note air will restart the application if the templates have changed.
 open:  http://localhost:8181
 
 Enjoy
+
+Bonus points, open the project in your editor and change some files.
+
+
 
