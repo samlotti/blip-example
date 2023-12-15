@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blipe
+  namespace: default
+  labels:
+    app: blipe
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: blipe
+  template:
+    metadata:
+      labels:
+        app: blipe
+    spec:
+      containers:
+      - name: ctw
+        image: registry.digitalocean.com/backendservices/blip_example:20230127203801
